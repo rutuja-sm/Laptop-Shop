@@ -13,13 +13,13 @@ const Product=({product,update})=>{
           .then((response) => {
             // Log the response data
             console.log(response.data);
-            window.alert("Product deleted successfully");
+           toast.success("Product deleted successfully");
             update(id);
           })
           .catch((error) => {
             // Log any error messages
             console.error(error);
-            window.alert("Product not deleted");
+           toast.success("Product deleted successfully");
           });
       };
       
