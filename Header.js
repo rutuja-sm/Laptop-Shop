@@ -3,13 +3,17 @@ import { Card, CardBody } from "reactstrap";
 
 function Header({name,title}){
     return(
-        
-                     <div style={{background:"pink" ,height:250,padding:60}}>
+        <div className="header">
 
-                <CardBody>
-                <h1 className="text-center my-5">Welcome To Laptop Shop</h1>
+        <div className="text-center">
+ 
+         <div style={{background:"pink" ,height:300,padding:50}}>
+         <CardBody>
+       <img src="Images/images.png" alt="Laptop" height="150"  width="150"/>
+                <h1 className="text-center my-4">Hi-TECH</h1>
                 </CardBody>
-            
+                </div>
+        </div>
         </div>
     );
 }
